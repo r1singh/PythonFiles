@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup 
 
+url='https://quotes.toscrape.com/'
 
 response = requests.get('https://quotes.toscrape.com/')
 soup=BeautifulSoup(response.text,'lxml')
